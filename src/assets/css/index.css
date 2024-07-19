@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  @apply bg-light-background text-light-secondary relative pt-28 sm:pt-36 dark:bg-dark-background dark:text-dark-primary;
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
